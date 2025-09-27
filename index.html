@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Componentes PC - TechParts</title>
+  <meta name="description" content="Compra los mejores componentes para tu PC: procesadores, memorias, tarjetas gráficas y más. ¡Envíos rápidos y ofertas exclusivas!" />
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: white;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin: 20px 0;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      list-style: none;
+      padding: 20px 0;
+      background-color: #1e1e1e;
+      margin: 0;
+    }
+
+    nav ul li {
+      margin: 0;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 1.2em;
+    }
+
+    .padre {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .hijo {
+      background-color: #1e1e1e;
+      padding: 20px;
+      border-radius: 8px;
+      width: 250px;
+      text-align: center;
+    }
+
+    .hijo img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .qr-code-section, .qr-whatsapp-section {
+      margin-top: 30px;
+    }
+
+    .qr-code-section img {
+      width: 150px;
+      height: 150px;
+      object-fit: contain;
+      border: 2px solid #333;
+      padding: 5px;
+      border-radius: 10px;
+    }
+
+    .social a {
+      margin: 10px;
+      font-size: 1.5em;
+      color: #fff;
+    }
+
+    .chatbot-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      padding: 10px;
+      border-radius: 50%;
+      font-size: 24px;
+      cursor: pointer;
+      color: white;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 40px;
+      background-color: #1e1e1e;
+    }
+
+    .footer-links ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-links li {
+      margin: 10px 0;
+    }
+
+    .footer-links a {
+      text-decoration: none;
+      color: #ddd;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>TechParts - Componentes para tu PC</h1>
+
+    <!-- Barra de navegación -->
+    <nav>
+      <ul>
+        <li><a href="quienessomos.html">Quiénes somos</a></li>
+        <li><a href="vision.html">Visión</a></li>
+        <li><a href="mision.html">Misión</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="gpu.html">GPU</a></li>
+        <li><a href="pcs.html">PCs</a></li>
+        <li><a href="ram.html">RAM</a></li>
+        <li><a href="discos.html">Discos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="padre">
+      <div class="hijo" id="procesadores">
+        <h2>Procesadores</h2>
+        <img src="procesador.jpg" alt="Procesador para computadora" />
+        <p>Ofrecemos procesadores de última generación que garantizan velocidad y eficiencia para tus tareas diarias, gaming o trabajo profesional.</p>
+      </div>
+
+      <div class="hijo" id="tarjetas-graficas">
+        <h2>Tarjetas Gráficas</h2>
+        <img src="tarjeta_grafica.jpg" alt="Tarjeta gráfica potente" />
+        <p>Las mejores tarjetas gráficas para videojuegos, edición y diseño. Potencia tu PC con tecnología avanzada y rendimiento superior.</p>
+      </div>
+
+      <div class="hijo" id="memorias-ram">
+        <h2>Memorias RAM</h2>
+        <img src="memoria_ram.jpg" alt="Memoria RAM para PC" />
+        <p>Incrementa la velocidad de tu equipo con nuestras memorias RAM confiables y de alta capacidad. Compatible con todas las marcas líderes.</p>
+      </div>
+
+      <!-- Nueva sección periféricos -->
+      <div class="hijo" id="perifericos">
+        <h2>Periféricos</h2>
+        <img src="perifericos.jpg" alt="Periféricos para PC" />
+        <p>Completa tu equipo con nuestros periféricos: teclados mecánicos, ratones gamer, monitores y más, para una experiencia completa y profesional.</p>
+      </div>
+    </div>
+
+    <!-- Sección código QR debajo de Periféricos -->
+    <div class="qr-code-section">
+      <h2>Escanea nuestro código QR para comprar rápido</h2>
+    </div>
+
+    <!-- Sección código QR de WhatsApp -->
+    <div class="qr-whatsapp-section">
+      <h2>Chatea con nosotros por WhatsApp</h2>
+      <a href="https://wa.me/51932028832" target="_blank" rel="noopener" aria-label="Chat WhatsApp TechParts">
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://wa.me/51932028832" 
+             alt="Código QR para WhatsApp TechParts" />
+      </a>
+      <p>Escanea o haz clic para iniciar una conversación rápida.</p>
+    </div>
+
+    <div class="social">
+      <h2>Síguenos en nuestras redes sociales</h2>
+      <a href="https://facebook.com/techparts" target="_blank" class="facebook" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://instagram.com/techparts" target="_blank" class="instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://twitter.com/techparts" target="_blank" class="twitter" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      <a href="https://youtube.com/@techparts" target="_blank" class="youtube" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      <a href="https://wa.me/51932028832" target="_blank" class="whatsapp" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://www.tiktok.com/@techparts" target="_blank" class="tiktok" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+      <a href="https://www.linkedin.com/in/techparts" target="_blank" class="linkedin" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://discord.com/invite/techparts" target="_blank" class="discord" aria-label="Discord"><i class="fab fa-discord"></i></a>
+      <a href="https://www.twitch.tv/techparts" target="_blank" class="twitch" aria-label="Twitch"><i class="fab fa-twitch"></i></a>
+      <a href="https://t.me/techparts" target="_blank" class="telegram" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a>
+    </div>
+  </main>
+
+  <!-- Botón flotante para abrir chat -->
+  <div class="chatbot-button" id="chatbotToggle">
+    <i class="fas fa-comments"></i>
+  </div>
+
+  <!-- Ventana del chat -->
+  <div class="chatbox" id="chatbox">
+    <div class="chatbox-header">
+      <h4>Chat en línea</h4>
+      <span id="closeChat">&times;</span>
+    </div>
+    <div class="chatbox-body" id="chatboxBody">
+      <p class="bot-msg">👋 Hola, ¿en qué componente podemos ayudarte hoy?</p>
+    </div>
+    <div class="chatbox-footer">
+      <input type="text" id="userInput" placeholder="Escribe un mensaje..." />
+      <button id="sendBtn"><i class="fas fa-paper-plane"></i></button>
+    </div>
+  </div>
+
+  <!-- Enlaces del footer -->
+  <div class="footer-links">
+    <div class="footer-container">
+      <ul>
+        <li><h3>Procesadores</h3></li>
+        <li><a href="#">Intel Core i7</a></li>
+        <li><a href="#">AMD Ryzen 7</a></li>
+        <li><a href="#">Intel Core i5</a></li>
+        <li><a href="#">AMD Ryzen 5</a></li>
+      </ul>
+
+      <ul>
+        <li><h3>Tarjetas Gráficas</h3></li>
+        <li><a href="#">NVIDIA RTX 3080</a></li>
+        <li><a href="#">AMD Radeon RX 6800</a></li>
+        <li><a href="#">NVIDIA GTX 1660</a></li>
+        <li><a href="#">AMD Radeon RX 5700</a></li>
+      </ul>
+
+      <ul>
+        <li><h3>Memorias RAM</h3></li>
+        <li><a href="#">Corsair 16GB DDR4</a></li>
+        <li><a href="#">G.Skill 32GB DDR4</a></li>
+        <li><a href="#">Kingston 8GB DDR4</a></li>
+        <li><a href="#">Crucial 16GB DDR4</a></li>
+      </ul>
+
+      <ul>
+        <li><h3>Otros Componentes</h3></li>
+        <li><a href="#">Placas Madre</a></li>
+        <li><a href="#">Discos SSD</a></li>
+        <li><a href="#">Fuentes de Poder</a></li>
+        <li><a href="#">Gabinetes</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Chatbot JavaScript -->
+  <script>
+    const chatbotToggle = document.getElementById("chatbotToggle");
+    const chatbox = document.getElementById("chatbox");
+    const closeChat = document.getElementById("closeChat");
+    const sendBtn = document.getElementById("sendBtn");
+    const userInput = document.getElementById("userInput");
+    const chatboxBody = document.getElementById("chatboxBody");
+
+    chatbotToggle.addEventListener("click", () => {
+      chatbox.style.display = "flex";
+    });
+
+    closeChat.addEventListener("click", () => {
+      chatbox.style.display = "none";
+    });
+
+    sendBtn.addEventListener("click", sendMessage);
+    userInput.addEventListener("keypress", (e) => {
+      if (e.key === "Enter") sendMessage();
+    });
+
+    function sendMessage() {
+      let msg = userInput.value.trim();
+      if (msg !== "") {
+        // Mensaje usuario
+        let userMsg = document.createElement("p");
+        userMsg.classList.add("user-msg");
+        userMsg.innerText = msg;
+        chatboxBody.appendChild(userMsg);
+
+        // Mensaje bot
+        let botMsg = document.createElement("p");
+        botMsg.classList.add("bot-msg");
+        botMsg.innerText = "🤖 Gracias por tu mensaje, uno de nuestros especialistas te responderá pronto.";
+        chatboxBody.appendChild(botMsg);
+
+        userInput.value = "";
+        chatboxBody.scrollTop = chatboxBody.scrollHeight;
+      }
+    }
+
+    // Cerrar chat con ESC
+    document.addEventListener('keydown', (e) => {
+      if (e.key === "Escape" && chatbox.style.display === "flex") {
+        chatbox.style.display = "none";
+      }
+    });
+  </script>
+
+</body>
+</html>

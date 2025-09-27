@@ -1,0 +1,82 @@
+/* vision.css */
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f9fc;
+  color: #222;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 30px;
+  border-bottom: 3px solid #3178c6;
+}
+
+header h1 {
+  font-size: 3rem;
+  color: #3178c6;
+  font-weight: 700;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+}
+
+/* Contenedor "señor" */
+.señor {
+  color: #444;
+  font-size: 1.15rem;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  padding: 0 15px;
+}
+
+/* Párrafos dentro de .señor */
+.señor p {
+  max-width: 700px;
+  text-align: justify;
+}
+
+/* Imagen */
+.señor img {
+  max-width: 100%;
+  width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(49, 120, 198, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.señor img:hover {
+  transform: scale(1.05);
+  cursor: default;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2.2rem;
+  }
+
+  .señor {
+    padding: 0 10px;
+  }
+
+  .señor img {
+    width: 100%;
+  }
+}

@@ -1,0 +1,93 @@
+/* quienessomos.css */
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7fb;
+  color: #222;
+  padding: 30px 15px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 30px;
+  border-bottom: 3px solid #007acc;
+}
+
+header h1 {
+  font-size: 3rem;
+  color: #007acc;
+  font-weight: 700;
+  margin-bottom: 25px;
+  letter-spacing: 1.1px;
+}
+
+/* Contenedor padre */
+.padre {
+  background-color: #ffffff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.07);
+  max-width: 850px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* Párrafos */
+.padre p {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: #444;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+/* Imagen */
+.padre img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 122, 204, 0.3);
+  align-self: center;
+  margin-top: 15px;
+  transition: transform 0.3s ease;
+  cursor: default;
+}
+
+.padre img:hover {
+  transform: scale(1.03);
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .padre {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+  .padre p {
+    max-width: 50%;
+    text-align: left;
+  }
+
+  .padre img {
+    max-width: 40%;
+    margin-top: 0;
+  }
+}

@@ -1,0 +1,175 @@
+/* productos.css */
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #222;
+  padding: 30px 20px;
+  line-height: 1.5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+header {
+  max-width: 900px;
+  margin: 0 auto 40px;
+  text-align: center;
+  border-bottom: 3px solid #0066cc;
+  padding-bottom: 20px;
+}
+
+header h1 {
+  font-size: 3rem;
+  color: #0066cc;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+}
+
+/* Main container */
+main {
+  flex-grow: 1;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Intro section */
+.intro p {
+  max-width: 700px;
+  margin: 0 auto 15px;
+  font-size: 1.1rem;
+  color: #444;
+  text-align: center;
+}
+
+/* Section titles */
+h2 {
+  color: #0066cc;
+  font-size: 2rem;
+  margin-bottom: 25px;
+  text-align: center;
+  font-weight: 600;
+  border-bottom: 2px solid #0066cc;
+  padding-bottom: 10px;
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Categorías */
+.categorias {
+  margin-bottom: 50px;
+}
+
+.categoria {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 25px 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.07);
+  transition: box-shadow 0.3s ease;
+}
+
+.categoria:hover {
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.13);
+}
+
+.categoria h3 {
+  color: #004a99;
+  margin-bottom: 12px;
+  font-size: 1.5rem;
+}
+
+.categoria p {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.categoria ul {
+  list-style: disc inside;
+  color: #333;
+  font-size: 1rem;
+}
+
+.categoria ul li {
+  margin-bottom: 8px;
+}
+
+/* Asesoría personalizada */
+.asesoria {
+  background-color: #dde9fc;
+  border-left: 5px solid #0066cc;
+  padding: 20px 30px;
+  max-width: 720px;
+  margin: 0 auto 50px;
+  border-radius: 8px;
+  color: #222;
+}
+
+.asesoria h2 {
+  border: none;
+  color: #004a99;
+  margin-bottom: 15px;
+  text-align: left;
+  max-width: none;
+}
+
+.asesoria p {
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+}
+
+/* Imágenes productos */
+.imagenes-productos {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.imagenes-productos img {
+  max-width: 260px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.imagenes-productos img:hover {
+  transform: scale(1.06);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  color: #666;
+  font-size: 0.9rem;
+  padding: 15px 0;
+  border-top: 1px solid #ddd;
+  background-color: #fff;
+  margin-top: auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .imagenes-productos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .imagenes-productos img {
+    max-width: 90%;
+    margin-bottom: 20px;
+  }
+}
